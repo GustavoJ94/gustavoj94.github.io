@@ -231,6 +231,7 @@ class Game extends Phaser.Scene {
     }
 
     preload() {
+	
         this.style1 = { font: ' 24px Hoop', fill: "#000000"};
         this.add.text(0, 0, "", { font: "1px Hoop" }).destroy();
 
@@ -954,7 +955,10 @@ let config = {
        fullscreenTarget:"container",
        mode: Phaser.Scale.RESIZE,
        autoCenter: Phaser.Scale.CENTER_BOTH,
-    }
+    },
+	input: {
+        sleepOnBlur: true // Disables pausing when tab loses focus
+    },
 }
 const game = new Phaser.Game(config)
     </script>
