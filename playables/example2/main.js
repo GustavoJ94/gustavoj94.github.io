@@ -16,7 +16,7 @@ class Game extends Phaser.Scene {
     }
 
     onClickDownload(){
-        alert('your url here')
+        
     }
 
     preload() {
