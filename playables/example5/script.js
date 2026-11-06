@@ -25,16 +25,10 @@ function _base64ToArrayBuffer(base64) {
 function preload() {
 	this.stage.disableVisibilityChange = false;
 	
-   if (this.game.device.desktop) {
         this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
         this.scale.pageAlignHorizontally = true;
         this.scale.pageAlignVertically = true
-    } else {
-        this.scale.scaleMode = Phaser.ScaleManager.EXACT_FIT;
-        this.scale.fullScreenScaleMode = Phaser.ScaleManager.EXACT_FIT;
-        this.scale.pageAlignHorizontally = true;
-        this.scale.pageAlignVertically = true
-    }
+
 
 	this.bgColor = "#000000"; //Background Color
     this.textWhite = { font: "bold 64px Open Sans", fill: "#00AD00", boundsAlignH: "center", boundsAlignV: "middle" ,align: "center" };
